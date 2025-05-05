@@ -15,8 +15,7 @@
      偷窃到的最高金额 = 2 + 9 + 1 = 12 。
 """
 
-
-
+from functools import cache
 from typing import List
 
 
@@ -43,4 +42,4 @@ class Solution:
         return dfs(len(nums) - 1)  # 从最后一个房子开始思考
 
 if __name__ == "__main__":
-    Solution().rob([2,1,1,2])
+    print(Solution().rob2([2,1,1,2]))
